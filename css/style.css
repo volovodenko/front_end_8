@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Apple-system';
+  src: url("../fonts/apple.ttf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Apple-system, Arial, sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+}
+
+header {
+  background-color: #2f2a26;
+  text-align: center;
+  padding: 0;
+}
+
+header h1 {
+  white-space: nowrap;
+  font-size: 72px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #fd1700), color-stop(45%, #ff5000), color-stop(48%, #ff5000), color-stop(55%, #fe8a01));
+  background: -o-linear-gradient(bottom, #fd1700 40%, #ff5000 45%, #ff5000 48%, #fe8a01 55%);
+  background: linear-gradient(0deg, #fd1700 40%, #ff5000 45%, #ff5000 48%, #fe8a01 55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header h1 img {
+  vertical-align: middle;
+}
+
+nav {
+  background-color: black;
+  border-top: 1px solid #fd1700;
+  border-bottom: 1px solid #fd1700;
+  height: 30px;
+  font-size: 20px;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  line-height: 30px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: ease-in-out color .2s;
+  -o-transition: ease-in-out color .2s;
+  transition: ease-in-out color .2s;
+  outline: 0 !important;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  border: 2px solid #fd1700;
+  display: none;
+  position: absolute;
+  background-color: #2f2a26;
+  top: 30px;
+  left: 0;
+  z-index: 10;
+  width: 150px;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+.submenu .submenu {
+  top: 0;
+  left: 100px;
+}
+
+footer {
+  border-top: 1px solid #fd1700;
+  border-bottom: 1px solid #fd1700;
+  background-color: #2f2a26;
+  height: 30px;
+}
+
+footer p {
+  color: #999;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+main section {
+  padding: 20px;
+}
+
+form textarea {
+  display: block;
+}

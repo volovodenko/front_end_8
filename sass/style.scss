@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Apple-system';
+  src: url("../fonts/apple.ttf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Apple-system, Arial, sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  //position: relative;
+}
+
+header {
+  background-color: #2f2a26;
+  text-align: center;
+  padding: 0;
+
+  h1 {
+    white-space: nowrap;
+    font-size: 72px;
+    background: linear-gradient(0deg, #fd1700 40%, #ff5000 45%, #ff5000 48%, #fe8a01 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+nav {
+  background-color: black;
+  border-top: 1px solid #fd1700;
+  border-bottom: 1px solid #fd1700;
+  height: 30px;
+  font-size: 20px;
+
+  ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+
+    li {
+      position: relative;
+
+      a {
+        color: #999;
+        text-decoration: none;
+        transition: ease-in-out color .2s;
+        outline: 0 !important;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      &:hover > .submenu {
+        display: block;
+      }
+
+    }
+
+  }
+}
+
+.submenu {
+  border: 2px solid #fd1700;
+  display: none;
+  position: absolute;
+  background-color: #2f2a26;
+  top: 30px;
+  left: 0;
+  z-index: 10;
+  width: 150px;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+
+  .submenu {
+    top: 0;
+    left: 100px;
+  }
+}
+
+footer {
+  //position: absolute;
+  //bottom: 0px;
+  //width: 100%;
+  border-top: 1px solid #fd1700;
+  border-bottom: 1px solid #fd1700;
+  background-color: #2f2a26;
+  height: 30px;
+
+  p {
+    color: #999;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+  }
+
+}
+
+main {
+  //padding-bottom: 50px;
+
+  section {
+    padding: 20px;
+  }
+}
+
+
+form {
+  textarea {
+    display: block;
+  }
+}
